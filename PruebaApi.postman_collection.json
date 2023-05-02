@@ -1,0 +1,1110 @@
+{
+	"info": {
+		"_postman_id": "f8e6c9f2-e354-40db-a997-45f06994764e",
+		"name": "PruebaApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19822347"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Buscar clientes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"identificacion\": \"7777\",\r\n  \"nombre\": \"hhhhhhh\",\r\n  \"edad\": 7,\r\n  \"genero\": \"77\",\r\n  \"telefono\": \"77\",\r\n  \"password\": \"7\",\r\n  \"status\": true,\r\n  \"direccion\": \"77\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clientes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Buscar clientes",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"identificacion\": \"7777\",\r\n  \"nombre\": \"hhhhhhh\",\r\n  \"edad\": 7,\r\n  \"genero\": \"77\",\r\n  \"telefono\": \"77\",\r\n  \"password\": \"7\",\r\n  \"status\": true,\r\n  \"direccion\": \"77\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/clientes/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 02 May 2023 12:30:16 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"password\": \"123\",\n        \"status\": true,\n        \"nombre\": \"pedro\",\n        \"genero\": \"M\",\n        \"edad\": 20,\n        \"identificacion\": \"99999\",\n        \"direccion\": \"direccion\",\n        \"telefono\": \"324767\",\n        \"accountList\": [\n            {\n                \"id\": 2,\n                \"nroAccount\": \"123\",\n                \"typeAccount\": \"Ahorro\",\n                \"initBalance\": 12323,\n                \"status\": true,\n                \"movementList\": [\n                    {\n                        \"id\": 1,\n                        \"dateMov\": \"2022-04-12T05:00:00.000+00:00\",\n                        \"typeMove\": \"Deposito\",\n                        \"value\": 100,\n                        \"balance\": 100\n                    },\n                    {\n                        \"id\": 13,\n                        \"dateMov\": \"2023-04-30T22:04:16.555+00:00\",\n                        \"typeMove\": \"Retiro\",\n                        \"value\": 300,\n                        \"balance\": 0\n                    },\n                    {\n                        \"id\": 14,\n                        \"dateMov\": \"2023-04-30T22:38:03.485+00:00\",\n                        \"typeMove\": \"Deposito\",\n                        \"value\": 300,\n                        \"balance\": 12123\n                    },\n                    {\n                        \"id\": 18,\n                        \"dateMov\": \"2023-05-01T01:12:45.459+00:00\",\n                        \"typeMove\": \"Retiro\",\n                        \"value\": 200,\n                        \"balance\": 12423\n                    },\n                    {\n                        \"id\": 19,\n                        \"dateMov\": \"2023-05-01T01:16:50.139+00:00\",\n                        \"typeMove\": \"Retiro\",\n                        \"value\": 200,\n                        \"balance\": 12023\n                    },\n                    {\n                        \"id\": 20,\n                        \"dateMov\": \"2023-05-01T01:30:06.878+00:00\",\n                        \"typeMove\": \"Retiro\",\n                        \"value\": 12023,\n                        \"balance\": 0\n                    },\n                    {\n                        \"id\": 21,\n                        \"dateMov\": \"2023-05-01T01:30:39.560+00:00\",\n                        \"typeMove\": \"Deposito\",\n                        \"value\": 12023,\n                        \"balance\": 12023\n                    }\n                ]\n            },\n            {\n                \"id\": 3,\n                \"nroAccount\": \"123456\",\n                \"typeAccount\": \"Corriente\",\n                \"initBalance\": 10000,\n                \"status\": true,\n                \"movementList\": []\n            },\n            {\n                \"id\": 4,\n                \"nroAccount\": \"88888\",\n                \"typeAccount\": \"Ahorro\",\n                \"initBalance\": 10000,\n                \"status\": true,\n                \"movementList\": []\n            },\n            {\n                \"id\": 6,\n                \"nroAccount\": \"123456789\",\n                \"typeAccount\": \"Corriente\",\n                \"initBalance\": 10000,\n                \"status\": true,\n                \"movementList\": []\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"password\": \"2343\",\n        \"status\": true,\n        \"nombre\": \"123\",\n        \"genero\": \"123\",\n        \"edad\": 11,\n        \"identificacion\": \"123\",\n        \"direccion\": \"234234\",\n        \"telefono\": \"234\",\n        \"accountList\": []\n    },\n    {\n        \"id\": 4,\n        \"password\": \"1234556\",\n        \"status\": true,\n        \"nombre\": \"juan liucas giraldo\",\n        \"genero\": \"M\",\n        \"edad\": 22,\n        \"identificacion\": \"665\",\n        \"direccion\": \"cll 87 - 3- 5\",\n        \"telefono\": \"3245676\",\n        \"accountList\": []\n    },\n    {\n        \"id\": 14,\n        \"password\": \"7\",\n        \"status\": true,\n        \"nombre\": \"nombre\",\n        \"genero\": \"77\",\n        \"edad\": 7,\n        \"identificacion\": \"9999\",\n        \"direccion\": \"77\",\n        \"telefono\": \"77\",\n        \"accountList\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Buscar Cliente por Identificacion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clientes/byIdent/123",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"byIdent",
+								"123"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Buscar Cliente por Identificacion",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/clientes/byIdent/123",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										"byIdent",
+										"123"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 02 May 2023 12:30:59 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"password\": \"2343\",\n    \"status\": true,\n    \"nombre\": \"123\",\n    \"genero\": \"123\",\n    \"edad\": 11,\n    \"identificacion\": \"123\",\n    \"direccion\": \"234234\",\n    \"telefono\": \"234\",\n    \"accountList\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Buscar Cliente por Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clientes/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Buscar Cliente por Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/clientes/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 02 May 2023 12:31:05 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"password\": \"123\",\n    \"status\": true,\n    \"nombre\": \"pedro\",\n    \"genero\": \"M\",\n    \"edad\": 20,\n    \"identificacion\": \"99999\",\n    \"direccion\": \"direccion\",\n    \"telefono\": \"324767\",\n    \"accountList\": [\n        {\n            \"id\": 2,\n            \"nroAccount\": \"123\",\n            \"typeAccount\": \"Ahorro\",\n            \"initBalance\": 12323,\n            \"status\": true,\n            \"movementList\": [\n                {\n                    \"id\": 1,\n                    \"dateMov\": \"2022-04-12T05:00:00.000+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 100,\n                    \"balance\": 100\n                },\n                {\n                    \"id\": 13,\n                    \"dateMov\": \"2023-04-30T22:04:16.555+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 300,\n                    \"balance\": 0\n                },\n                {\n                    \"id\": 14,\n                    \"dateMov\": \"2023-04-30T22:38:03.485+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 300,\n                    \"balance\": 12123\n                },\n                {\n                    \"id\": 18,\n                    \"dateMov\": \"2023-05-01T01:12:45.459+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 200,\n                    \"balance\": 12423\n                },\n                {\n                    \"id\": 19,\n                    \"dateMov\": \"2023-05-01T01:16:50.139+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 200,\n                    \"balance\": 12023\n                },\n                {\n                    \"id\": 20,\n                    \"dateMov\": \"2023-05-01T01:30:06.878+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 12023,\n                    \"balance\": 0\n                },\n                {\n                    \"id\": 21,\n                    \"dateMov\": \"2023-05-01T01:30:39.560+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 12023,\n                    \"balance\": 12023\n                }\n            ]\n        },\n        {\n            \"id\": 3,\n            \"nroAccount\": \"123456\",\n            \"typeAccount\": \"Corriente\",\n            \"initBalance\": 10000,\n            \"status\": true,\n            \"movementList\": []\n        },\n        {\n            \"id\": 4,\n            \"nroAccount\": \"88888\",\n            \"typeAccount\": \"Ahorro\",\n            \"initBalance\": 10000,\n            \"status\": true,\n            \"movementList\": []\n        },\n        {\n            \"id\": 6,\n            \"nroAccount\": \"123456789\",\n            \"typeAccount\": \"Corriente\",\n            \"initBalance\": 10000,\n            \"status\": true,\n            \"movementList\": []\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Guardar Cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"identificacion\": \"2345\",\r\n  \"nombre\": \"nombre\",\r\n  \"edad\": 7,\r\n  \"genero\": \"77\",\r\n  \"telefono\": \"77\",\r\n  \"password\": \"7\",\r\n  \"status\": true,\r\n  \"direccion\": \"77\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clientes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Guardar Cliente",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"identificacion\": \"2345\",\r\n  \"nombre\": \"nombre\",\r\n  \"edad\": 7,\r\n  \"genero\": \"77\",\r\n  \"telefono\": \"77\",\r\n  \"password\": \"7\",\r\n  \"status\": true,\r\n  \"direccion\": \"77\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/clientes/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 02 May 2023 12:31:13 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 17,\n    \"password\": \"7\",\n    \"status\": true,\n    \"nombre\": \"nombre\",\n    \"genero\": \"77\",\n    \"edad\": 7,\n    \"identificacion\": \"2345\",\n    \"direccion\": \"77\",\n    \"telefono\": \"77\",\n    \"accountList\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Actualizar Cliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"identificacion\": \"2345\",\r\n  \"nombre\": \"nombre\",\r\n  \"edad\":23,\r\n  \"genero\": \"77\",\r\n  \"telefono\": \"77\",\r\n  \"password\": \"7\",\r\n  \"status\": true,\r\n  \"direccion\": \"77\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clientes/17",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"17"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Actualizar Cliente",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"identificacion\": \"2345\",\r\n  \"nombre\": \"nombre\",\r\n  \"edad\":23,\r\n  \"genero\": \"77\",\r\n  \"telefono\": \"77\",\r\n  \"password\": \"7\",\r\n  \"status\": true,\r\n  \"direccion\": \"77\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/clientes/17",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										"17"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 02 May 2023 12:33:30 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 17,\n    \"password\": \"7\",\n    \"status\": true,\n    \"nombre\": \"nombre\",\n    \"genero\": \"77\",\n    \"edad\": 23,\n    \"identificacion\": \"2345\",\n    \"direccion\": \"77\",\n    \"telefono\": \"77\",\n    \"accountList\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "Eliminar Cliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clientes/17",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"17"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Eliminar Cliente",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/clientes/17",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"clientes",
+										"17"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "27"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 02 May 2023 12:33:39 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "Eliminado Correctamente: 17"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Cuentas",
+			"item": [
+				{
+					"name": "Buscar Cuentas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/cuentas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Buscar Cuentas",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/cuentas/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cuentas",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 02 May 2023 12:33:47 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 2,\n        \"nroAccount\": \"123\",\n        \"typeAccount\": \"Ahorro\",\n        \"initBalance\": 12323,\n        \"status\": true,\n        \"client\": {\n            \"id\": 2,\n            \"nombre\": \"pedro\",\n            \"genero\": \"M\",\n            \"edad\": 20,\n            \"identificacion\": \"99999\",\n            \"direccion\": \"direccion\",\n            \"telefono\": \"324767\",\n            \"password\": \"123\",\n            \"status\": true,\n            \"accountList\": [\n                {\n                    \"id\": 2,\n                    \"nroAccount\": \"123\",\n                    \"typeAccount\": \"Ahorro\",\n                    \"initBalance\": 12323,\n                    \"status\": true,\n                    \"movementList\": [\n                        {\n                            \"id\": 1,\n                            \"dateMov\": \"2022-04-12T05:00:00.000+00:00\",\n                            \"typeMove\": \"Deposito\",\n                            \"value\": 100,\n                            \"balance\": 100\n                        },\n                        {\n                            \"id\": 13,\n                            \"dateMov\": \"2023-04-30T22:04:16.555+00:00\",\n                            \"typeMove\": \"Retiro\",\n                            \"value\": 300,\n                            \"balance\": 0\n                        },\n                        {\n                            \"id\": 14,\n                            \"dateMov\": \"2023-04-30T22:38:03.485+00:00\",\n                            \"typeMove\": \"Deposito\",\n                            \"value\": 300,\n                            \"balance\": 12123\n                        },\n                        {\n                            \"id\": 18,\n                            \"dateMov\": \"2023-05-01T01:12:45.459+00:00\",\n                            \"typeMove\": \"Retiro\",\n                            \"value\": 200,\n                            \"balance\": 12423\n                        },\n                        {\n                            \"id\": 19,\n                            \"dateMov\": \"2023-05-01T01:16:50.139+00:00\",\n                            \"typeMove\": \"Retiro\",\n                            \"value\": 200,\n                            \"balance\": 12023\n                        },\n                        {\n                            \"id\": 20,\n                            \"dateMov\": \"2023-05-01T01:30:06.878+00:00\",\n                            \"typeMove\": \"Retiro\",\n                            \"value\": 12023,\n                            \"balance\": 0\n                        },\n                        {\n                            \"id\": 21,\n                            \"dateMov\": \"2023-05-01T01:30:39.560+00:00\",\n                            \"typeMove\": \"Deposito\",\n                            \"value\": 12023,\n                            \"balance\": 12023\n                        }\n                    ]\n                },\n                {\n                    \"id\": 3,\n                    \"nroAccount\": \"123456\",\n                    \"typeAccount\": \"Corriente\",\n                    \"initBalance\": 10000,\n                    \"status\": true,\n                    \"movementList\": []\n                },\n                {\n                    \"id\": 4,\n                    \"nroAccount\": \"88888\",\n                    \"typeAccount\": \"Ahorro\",\n                    \"initBalance\": 10000,\n                    \"status\": true,\n                    \"movementList\": []\n                },\n                {\n                    \"id\": 6,\n                    \"nroAccount\": \"123456789\",\n                    \"typeAccount\": \"Corriente\",\n                    \"initBalance\": 10000,\n                    \"status\": true,\n                    \"movementList\": []\n                }\n            ]\n        },\n        \"movementList\": [\n            {\n                \"id\": 1,\n                \"dateMov\": \"2022-04-12T05:00:00.000+00:00\",\n                \"typeMove\": \"Deposito\",\n                \"value\": 100,\n                \"balance\": 100\n            },\n            {\n                \"id\": 13,\n                \"dateMov\": \"2023-04-30T22:04:16.555+00:00\",\n                \"typeMove\": \"Retiro\",\n                \"value\": 300,\n                \"balance\": 0\n            },\n            {\n                \"id\": 14,\n                \"dateMov\": \"2023-04-30T22:38:03.485+00:00\",\n                \"typeMove\": \"Deposito\",\n                \"value\": 300,\n                \"balance\": 12123\n            },\n            {\n                \"id\": 18,\n                \"dateMov\": \"2023-05-01T01:12:45.459+00:00\",\n                \"typeMove\": \"Retiro\",\n                \"value\": 200,\n                \"balance\": 12423\n            },\n            {\n                \"id\": 19,\n                \"dateMov\": \"2023-05-01T01:16:50.139+00:00\",\n                \"typeMove\": \"Retiro\",\n                \"value\": 200,\n                \"balance\": 12023\n            },\n            {\n                \"id\": 20,\n                \"dateMov\": \"2023-05-01T01:30:06.878+00:00\",\n                \"typeMove\": \"Retiro\",\n                \"value\": 12023,\n                \"balance\": 0\n            },\n            {\n                \"id\": 21,\n                \"dateMov\": \"2023-05-01T01:30:39.560+00:00\",\n                \"typeMove\": \"Deposito\",\n                \"value\": 12023,\n                \"balance\": 12023\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"nroAccount\": \"123456\",\n        \"typeAccount\": \"Corriente\",\n        \"initBalance\": 10000,\n        \"status\": true,\n        \"client\": {\n            \"id\": 2,\n            \"nombre\": \"pedro\",\n            \"genero\": \"M\",\n            \"edad\": 20,\n            \"identificacion\": \"99999\",\n            \"direccion\": \"direccion\",\n            \"telefono\": \"324767\",\n            \"password\": \"123\",\n            \"status\": true,\n            \"accountList\": [\n                {\n                    \"id\": 2,\n                    \"nroAccount\": \"123\",\n                    \"typeAccount\": \"Ahorro\",\n                    \"initBalance\": 12323,\n                    \"status\": true,\n                    \"movementList\": [\n                        {\n                            \"id\": 1,\n                            \"dateMov\": \"2022-04-12T05:00:00.000+00:00\",\n                            \"typeMove\": \"Deposito\",\n                            \"value\": 100,\n                            \"balance\": 100\n                        },\n                        {\n                            \"id\": 13,\n                            \"dateMov\": \"2023-04-30T22:04:16.555+00:00\",\n                            \"typeMove\": \"Retiro\",\n                            \"value\": 300,\n                            \"balance\": 0\n                        },\n                        {\n                            \"id\": 14,\n                            \"dateMov\": \"2023-04-30T22:38:03.485+00:00\",\n                            \"typeMove\": \"Deposito\",\n                            \"value\": 300,\n                            \"balance\": 12123\n                        },\n                        {\n                            \"id\": 18,\n                            \"dateMov\": \"2023-05-01T01:12:45.459+00:00\",\n                            \"typeMove\": \"Retiro\",\n                            \"value\": 200,\n                            \"balance\": 12423\n                        },\n                        {\n                            \"id\": 19,\n                            \"dateMov\": \"2023-05-01T01:16:50.139+00:00\",\n                            \"typeMove\": \"Retiro\",\n                            \"value\": 200,\n                            \"balance\": 12023\n                        },\n                        {\n                            \"id\": 20,\n                            \"dateMov\": \"2023-05-01T01:30:06.878+00:00\",\n                            \"typeMove\": \"Retiro\",\n                            \"value\": 12023,\n                            \"balance\": 0\n                        },\n                        {\n                            \"id\": 21,\n                            \"dateMov\": \"2023-05-01T01:30:39.560+00:00\",\n                            \"typeMove\": \"Deposito\",\n                            \"value\": 12023,\n                            \"balance\": 12023\n                        }\n                    ]\n                },\n                {\n                    \"id\": 3,\n                    \"nroAccount\": \"123456\",\n                    \"typeAccount\": \"Corriente\",\n                    \"initBalance\": 10000,\n                    \"status\": true,\n                    \"movementList\": []\n                },\n                {\n                    \"id\": 4,\n                    \"nroAccount\": \"88888\",\n                    \"typeAccount\": \"Ahorro\",\n                    \"initBalance\": 10000,\n                    \"status\": true,\n                    \"movementList\": []\n                },\n                {\n                    \"id\": 6,\n                    \"nroAccount\": \"123456789\",\n                    \"typeAccount\": \"Corriente\",\n                    \"initBalance\": 10000,\n                    \"status\": true,\n                    \"movementList\": []\n                }\n            ]\n        },\n        \"movementList\": []\n    },\n    {\n        \"id\": 4,\n        \"nroAccount\": \"88888\",\n        \"typeAccount\": \"Ahorro\",\n        \"initBalance\": 10000,\n        \"status\": true,\n        \"client\": {\n            \"id\": 2,\n            \"nombre\": \"pedro\",\n            \"genero\": \"M\",\n            \"edad\": 20,\n            \"identificacion\": \"99999\",\n            \"direccion\": \"direccion\",\n            \"telefono\": \"324767\",\n            \"password\": \"123\",\n            \"status\": true,\n            \"accountList\": [\n                {\n                    \"id\": 2,\n                    \"nroAccount\": \"123\",\n                    \"typeAccount\": \"Ahorro\",\n                    \"initBalance\": 12323,\n                    \"status\": true,\n                    \"movementList\": [\n                        {\n                            \"id\": 1,\n                            \"dateMov\": \"2022-04-12T05:00:00.000+00:00\",\n                            \"typeMove\": \"Deposito\",\n                            \"value\": 100,\n                            \"balance\": 100\n                        },\n                        {\n                            \"id\": 13,\n                            \"dateMov\": \"2023-04-30T22:04:16.555+00:00\",\n                            \"typeMove\": \"Retiro\",\n                            \"value\": 300,\n                            \"balance\": 0\n                        },\n                        {\n                            \"id\": 14,\n                            \"dateMov\": \"2023-04-30T22:38:03.485+00:00\",\n                            \"typeMove\": \"Deposito\",\n                            \"value\": 300,\n                            \"balance\": 12123\n                        },\n                        {\n                            \"id\": 18,\n                            \"dateMov\": \"2023-05-01T01:12:45.459+00:00\",\n                            \"typeMove\": \"Retiro\",\n                            \"value\": 200,\n                            \"balance\": 12423\n                        },\n                        {\n                            \"id\": 19,\n                            \"dateMov\": \"2023-05-01T01:16:50.139+00:00\",\n                            \"typeMove\": \"Retiro\",\n                            \"value\": 200,\n                            \"balance\": 12023\n                        },\n                        {\n                            \"id\": 20,\n                            \"dateMov\": \"2023-05-01T01:30:06.878+00:00\",\n                            \"typeMove\": \"Retiro\",\n                            \"value\": 12023,\n                            \"balance\": 0\n                        },\n                        {\n                            \"id\": 21,\n                            \"dateMov\": \"2023-05-01T01:30:39.560+00:00\",\n                            \"typeMove\": \"Deposito\",\n                            \"value\": 12023,\n                            \"balance\": 12023\n                        }\n                    ]\n                },\n                {\n                    \"id\": 3,\n                    \"nroAccount\": \"123456\",\n                    \"typeAccount\": \"Corriente\",\n                    \"initBalance\": 10000,\n                    \"status\": true,\n                    \"movementList\": []\n                },\n                {\n                    \"id\": 4,\n                    \"nroAccount\": \"88888\",\n                    \"typeAccount\": \"Ahorro\",\n                    \"initBalance\": 10000,\n                    \"status\": true,\n                    \"movementList\": []\n                },\n                {\n                    \"id\": 6,\n                    \"nroAccount\": \"123456789\",\n                    \"typeAccount\": \"Corriente\",\n                    \"initBalance\": 10000,\n                    \"status\": true,\n                    \"movementList\": []\n                }\n            ]\n        },\n        \"movementList\": []\n    },\n    {\n        \"id\": 6,\n        \"nroAccount\": \"123456789\",\n        \"typeAccount\": \"Corriente\",\n        \"initBalance\": 10000,\n        \"status\": true,\n        \"client\": {\n            \"id\": 2,\n            \"nombre\": \"pedro\",\n            \"genero\": \"M\",\n            \"edad\": 20,\n            \"identificacion\": \"99999\",\n            \"direccion\": \"direccion\",\n            \"telefono\": \"324767\",\n            \"password\": \"123\",\n            \"status\": true,\n            \"accountList\": [\n                {\n                    \"id\": 2,\n                    \"nroAccount\": \"123\",\n                    \"typeAccount\": \"Ahorro\",\n                    \"initBalance\": 12323,\n                    \"status\": true,\n                    \"movementList\": [\n                        {\n                            \"id\": 1,\n                            \"dateMov\": \"2022-04-12T05:00:00.000+00:00\",\n                            \"typeMove\": \"Deposito\",\n                            \"value\": 100,\n                            \"balance\": 100\n                        },\n                        {\n                            \"id\": 13,\n                            \"dateMov\": \"2023-04-30T22:04:16.555+00:00\",\n                            \"typeMove\": \"Retiro\",\n                            \"value\": 300,\n                            \"balance\": 0\n                        },\n                        {\n                            \"id\": 14,\n                            \"dateMov\": \"2023-04-30T22:38:03.485+00:00\",\n                            \"typeMove\": \"Deposito\",\n                            \"value\": 300,\n                            \"balance\": 12123\n                        },\n                        {\n                            \"id\": 18,\n                            \"dateMov\": \"2023-05-01T01:12:45.459+00:00\",\n                            \"typeMove\": \"Retiro\",\n                            \"value\": 200,\n                            \"balance\": 12423\n                        },\n                        {\n                            \"id\": 19,\n                            \"dateMov\": \"2023-05-01T01:16:50.139+00:00\",\n                            \"typeMove\": \"Retiro\",\n                            \"value\": 200,\n                            \"balance\": 12023\n                        },\n                        {\n                            \"id\": 20,\n                            \"dateMov\": \"2023-05-01T01:30:06.878+00:00\",\n                            \"typeMove\": \"Retiro\",\n                            \"value\": 12023,\n                            \"balance\": 0\n                        },\n                        {\n                            \"id\": 21,\n                            \"dateMov\": \"2023-05-01T01:30:39.560+00:00\",\n                            \"typeMove\": \"Deposito\",\n                            \"value\": 12023,\n                            \"balance\": 12023\n                        }\n                    ]\n                },\n                {\n                    \"id\": 3,\n                    \"nroAccount\": \"123456\",\n                    \"typeAccount\": \"Corriente\",\n                    \"initBalance\": 10000,\n                    \"status\": true,\n                    \"movementList\": []\n                },\n                {\n                    \"id\": 4,\n                    \"nroAccount\": \"88888\",\n                    \"typeAccount\": \"Ahorro\",\n                    \"initBalance\": 10000,\n                    \"status\": true,\n                    \"movementList\": []\n                },\n                {\n                    \"id\": 6,\n                    \"nroAccount\": \"123456789\",\n                    \"typeAccount\": \"Corriente\",\n                    \"initBalance\": 10000,\n                    \"status\": true,\n                    \"movementList\": []\n                }\n            ]\n        },\n        \"movementList\": []\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Buscar Cuentas por Nro Cuenta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/cuentas/findByNro/123",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"findByNro",
+								"123"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Buscar Cuentas por Nro Cuenta",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/cuentas/findByNro/123",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cuentas",
+										"findByNro",
+										"123"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 02 May 2023 12:33:52 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 2,\n    \"nroAccount\": \"123\",\n    \"typeAccount\": \"Ahorro\",\n    \"initBalance\": 12323,\n    \"status\": true,\n    \"client\": {\n        \"id\": 2,\n        \"nombre\": \"pedro\",\n        \"genero\": \"M\",\n        \"edad\": 20,\n        \"identificacion\": \"99999\",\n        \"direccion\": \"direccion\",\n        \"telefono\": \"324767\",\n        \"password\": \"123\",\n        \"status\": true,\n        \"accountList\": [\n            {\n                \"id\": 2,\n                \"nroAccount\": \"123\",\n                \"typeAccount\": \"Ahorro\",\n                \"initBalance\": 12323,\n                \"status\": true,\n                \"movementList\": [\n                    {\n                        \"id\": 1,\n                        \"dateMov\": \"2022-04-12T05:00:00.000+00:00\",\n                        \"typeMove\": \"Deposito\",\n                        \"value\": 100,\n                        \"balance\": 100\n                    },\n                    {\n                        \"id\": 13,\n                        \"dateMov\": \"2023-04-30T22:04:16.555+00:00\",\n                        \"typeMove\": \"Retiro\",\n                        \"value\": 300,\n                        \"balance\": 0\n                    },\n                    {\n                        \"id\": 14,\n                        \"dateMov\": \"2023-04-30T22:38:03.485+00:00\",\n                        \"typeMove\": \"Deposito\",\n                        \"value\": 300,\n                        \"balance\": 12123\n                    },\n                    {\n                        \"id\": 18,\n                        \"dateMov\": \"2023-05-01T01:12:45.459+00:00\",\n                        \"typeMove\": \"Retiro\",\n                        \"value\": 200,\n                        \"balance\": 12423\n                    },\n                    {\n                        \"id\": 19,\n                        \"dateMov\": \"2023-05-01T01:16:50.139+00:00\",\n                        \"typeMove\": \"Retiro\",\n                        \"value\": 200,\n                        \"balance\": 12023\n                    },\n                    {\n                        \"id\": 20,\n                        \"dateMov\": \"2023-05-01T01:30:06.878+00:00\",\n                        \"typeMove\": \"Retiro\",\n                        \"value\": 12023,\n                        \"balance\": 0\n                    },\n                    {\n                        \"id\": 21,\n                        \"dateMov\": \"2023-05-01T01:30:39.560+00:00\",\n                        \"typeMove\": \"Deposito\",\n                        \"value\": 12023,\n                        \"balance\": 12023\n                    }\n                ]\n            },\n            {\n                \"id\": 3,\n                \"nroAccount\": \"123456\",\n                \"typeAccount\": \"Corriente\",\n                \"initBalance\": 10000,\n                \"status\": true,\n                \"movementList\": []\n            },\n            {\n                \"id\": 4,\n                \"nroAccount\": \"88888\",\n                \"typeAccount\": \"Ahorro\",\n                \"initBalance\": 10000,\n                \"status\": true,\n                \"movementList\": []\n            },\n            {\n                \"id\": 6,\n                \"nroAccount\": \"123456789\",\n                \"typeAccount\": \"Corriente\",\n                \"initBalance\": 10000,\n                \"status\": true,\n                \"movementList\": []\n            }\n        ]\n    },\n    \"movementList\": [\n        {\n            \"id\": 1,\n            \"dateMov\": \"2022-04-12T05:00:00.000+00:00\",\n            \"typeMove\": \"Deposito\",\n            \"value\": 100,\n            \"balance\": 100\n        },\n        {\n            \"id\": 13,\n            \"dateMov\": \"2023-04-30T22:04:16.555+00:00\",\n            \"typeMove\": \"Retiro\",\n            \"value\": 300,\n            \"balance\": 0\n        },\n        {\n            \"id\": 14,\n            \"dateMov\": \"2023-04-30T22:38:03.485+00:00\",\n            \"typeMove\": \"Deposito\",\n            \"value\": 300,\n            \"balance\": 12123\n        },\n        {\n            \"id\": 18,\n            \"dateMov\": \"2023-05-01T01:12:45.459+00:00\",\n            \"typeMove\": \"Retiro\",\n            \"value\": 200,\n            \"balance\": 12423\n        },\n        {\n            \"id\": 19,\n            \"dateMov\": \"2023-05-01T01:16:50.139+00:00\",\n            \"typeMove\": \"Retiro\",\n            \"value\": 200,\n            \"balance\": 12023\n        },\n        {\n            \"id\": 20,\n            \"dateMov\": \"2023-05-01T01:30:06.878+00:00\",\n            \"typeMove\": \"Retiro\",\n            \"value\": 12023,\n            \"balance\": 0\n        },\n        {\n            \"id\": 21,\n            \"dateMov\": \"2023-05-01T01:30:39.560+00:00\",\n            \"typeMove\": \"Deposito\",\n            \"value\": 12023,\n            \"balance\": 12023\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Guardar Cuenta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nroAccount\": \"12345678\",\r\n  \"typeAccount\": \"Ahorro\",\r\n  \"status\": true,\r\n  \"initBalance\": 10000,\r\n  \"client\": {\r\n    \"id\": 3,\r\n    \"password\": \"2343\",\r\n    \"status\": true,\r\n    \"nombre\": \"123\",\r\n    \"genero\": \"123\",\r\n    \"edad\": 11,\r\n    \"identificacion\": \"123\",\r\n    \"direccion\": \"234234\",\r\n    \"telefono\": \"234\",\r\n    \"accountList\": []\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/cuentas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Guardar Cuenta",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"nroAccount\": \"12345678\",\r\n  \"typeAccount\": \"Ahorro\",\r\n  \"status\": true,\r\n  \"initBalance\": 10000,\r\n  \"client\": {\r\n    \"id\": 3,\r\n    \"password\": \"2343\",\r\n    \"status\": true,\r\n    \"nombre\": \"123\",\r\n    \"genero\": \"123\",\r\n    \"edad\": 11,\r\n    \"identificacion\": \"123\",\r\n    \"direccion\": \"234234\",\r\n    \"telefono\": \"234\",\r\n    \"accountList\": []\r\n  }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/cuentas/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"cuentas",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 02 May 2023 12:34:03 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 9,\n    \"nroAccount\": \"12345678\",\n    \"typeAccount\": \"Ahorro\",\n    \"initBalance\": 10000,\n    \"status\": true,\n    \"client\": {\n        \"id\": 3,\n        \"nombre\": \"123\",\n        \"genero\": \"123\",\n        \"edad\": 11,\n        \"identificacion\": \"123\",\n        \"direccion\": \"234234\",\n        \"telefono\": \"234\",\n        \"password\": \"2343\",\n        \"status\": true,\n        \"accountList\": []\n    },\n    \"movementList\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Movimientos",
+			"item": [
+				{
+					"name": "Movimientos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/movimientos/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Movimientos",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/movimientos/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"movimientos",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 02 May 2023 12:34:08 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"dateMov\": \"2022-04-12T05:00:00.000+00:00\",\n        \"typeMove\": \"Deposito\",\n        \"value\": 100,\n        \"balance\": 100,\n        \"account\": {\n            \"id\": 2,\n            \"nroAccount\": \"123\",\n            \"typeAccount\": \"Ahorro\",\n            \"initBalance\": 12323,\n            \"status\": true,\n            \"movementList\": [\n                {\n                    \"id\": 1,\n                    \"dateMov\": \"2022-04-12T05:00:00.000+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 100,\n                    \"balance\": 100\n                },\n                {\n                    \"id\": 13,\n                    \"dateMov\": \"2023-04-30T22:04:16.555+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 300,\n                    \"balance\": 0\n                },\n                {\n                    \"id\": 14,\n                    \"dateMov\": \"2023-04-30T22:38:03.485+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 300,\n                    \"balance\": 12123\n                },\n                {\n                    \"id\": 18,\n                    \"dateMov\": \"2023-05-01T01:12:45.459+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 200,\n                    \"balance\": 12423\n                },\n                {\n                    \"id\": 19,\n                    \"dateMov\": \"2023-05-01T01:16:50.139+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 200,\n                    \"balance\": 12023\n                },\n                {\n                    \"id\": 20,\n                    \"dateMov\": \"2023-05-01T01:30:06.878+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 12023,\n                    \"balance\": 0\n                },\n                {\n                    \"id\": 21,\n                    \"dateMov\": \"2023-05-01T01:30:39.560+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 12023,\n                    \"balance\": 12023\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 13,\n        \"dateMov\": \"2023-04-30T22:04:16.555+00:00\",\n        \"typeMove\": \"Retiro\",\n        \"value\": 300,\n        \"balance\": 0,\n        \"account\": {\n            \"id\": 2,\n            \"nroAccount\": \"123\",\n            \"typeAccount\": \"Ahorro\",\n            \"initBalance\": 12323,\n            \"status\": true,\n            \"movementList\": [\n                {\n                    \"id\": 1,\n                    \"dateMov\": \"2022-04-12T05:00:00.000+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 100,\n                    \"balance\": 100\n                },\n                {\n                    \"id\": 13,\n                    \"dateMov\": \"2023-04-30T22:04:16.555+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 300,\n                    \"balance\": 0\n                },\n                {\n                    \"id\": 14,\n                    \"dateMov\": \"2023-04-30T22:38:03.485+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 300,\n                    \"balance\": 12123\n                },\n                {\n                    \"id\": 18,\n                    \"dateMov\": \"2023-05-01T01:12:45.459+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 200,\n                    \"balance\": 12423\n                },\n                {\n                    \"id\": 19,\n                    \"dateMov\": \"2023-05-01T01:16:50.139+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 200,\n                    \"balance\": 12023\n                },\n                {\n                    \"id\": 20,\n                    \"dateMov\": \"2023-05-01T01:30:06.878+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 12023,\n                    \"balance\": 0\n                },\n                {\n                    \"id\": 21,\n                    \"dateMov\": \"2023-05-01T01:30:39.560+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 12023,\n                    \"balance\": 12023\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 14,\n        \"dateMov\": \"2023-04-30T22:38:03.485+00:00\",\n        \"typeMove\": \"Deposito\",\n        \"value\": 300,\n        \"balance\": 12123,\n        \"account\": {\n            \"id\": 2,\n            \"nroAccount\": \"123\",\n            \"typeAccount\": \"Ahorro\",\n            \"initBalance\": 12323,\n            \"status\": true,\n            \"movementList\": [\n                {\n                    \"id\": 1,\n                    \"dateMov\": \"2022-04-12T05:00:00.000+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 100,\n                    \"balance\": 100\n                },\n                {\n                    \"id\": 13,\n                    \"dateMov\": \"2023-04-30T22:04:16.555+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 300,\n                    \"balance\": 0\n                },\n                {\n                    \"id\": 14,\n                    \"dateMov\": \"2023-04-30T22:38:03.485+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 300,\n                    \"balance\": 12123\n                },\n                {\n                    \"id\": 18,\n                    \"dateMov\": \"2023-05-01T01:12:45.459+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 200,\n                    \"balance\": 12423\n                },\n                {\n                    \"id\": 19,\n                    \"dateMov\": \"2023-05-01T01:16:50.139+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 200,\n                    \"balance\": 12023\n                },\n                {\n                    \"id\": 20,\n                    \"dateMov\": \"2023-05-01T01:30:06.878+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 12023,\n                    \"balance\": 0\n                },\n                {\n                    \"id\": 21,\n                    \"dateMov\": \"2023-05-01T01:30:39.560+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 12023,\n                    \"balance\": 12023\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 18,\n        \"dateMov\": \"2023-05-01T01:12:45.459+00:00\",\n        \"typeMove\": \"Retiro\",\n        \"value\": 200,\n        \"balance\": 12423,\n        \"account\": {\n            \"id\": 2,\n            \"nroAccount\": \"123\",\n            \"typeAccount\": \"Ahorro\",\n            \"initBalance\": 12323,\n            \"status\": true,\n            \"movementList\": [\n                {\n                    \"id\": 1,\n                    \"dateMov\": \"2022-04-12T05:00:00.000+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 100,\n                    \"balance\": 100\n                },\n                {\n                    \"id\": 13,\n                    \"dateMov\": \"2023-04-30T22:04:16.555+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 300,\n                    \"balance\": 0\n                },\n                {\n                    \"id\": 14,\n                    \"dateMov\": \"2023-04-30T22:38:03.485+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 300,\n                    \"balance\": 12123\n                },\n                {\n                    \"id\": 18,\n                    \"dateMov\": \"2023-05-01T01:12:45.459+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 200,\n                    \"balance\": 12423\n                },\n                {\n                    \"id\": 19,\n                    \"dateMov\": \"2023-05-01T01:16:50.139+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 200,\n                    \"balance\": 12023\n                },\n                {\n                    \"id\": 20,\n                    \"dateMov\": \"2023-05-01T01:30:06.878+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 12023,\n                    \"balance\": 0\n                },\n                {\n                    \"id\": 21,\n                    \"dateMov\": \"2023-05-01T01:30:39.560+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 12023,\n                    \"balance\": 12023\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 19,\n        \"dateMov\": \"2023-05-01T01:16:50.139+00:00\",\n        \"typeMove\": \"Retiro\",\n        \"value\": 200,\n        \"balance\": 12023,\n        \"account\": {\n            \"id\": 2,\n            \"nroAccount\": \"123\",\n            \"typeAccount\": \"Ahorro\",\n            \"initBalance\": 12323,\n            \"status\": true,\n            \"movementList\": [\n                {\n                    \"id\": 1,\n                    \"dateMov\": \"2022-04-12T05:00:00.000+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 100,\n                    \"balance\": 100\n                },\n                {\n                    \"id\": 13,\n                    \"dateMov\": \"2023-04-30T22:04:16.555+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 300,\n                    \"balance\": 0\n                },\n                {\n                    \"id\": 14,\n                    \"dateMov\": \"2023-04-30T22:38:03.485+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 300,\n                    \"balance\": 12123\n                },\n                {\n                    \"id\": 18,\n                    \"dateMov\": \"2023-05-01T01:12:45.459+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 200,\n                    \"balance\": 12423\n                },\n                {\n                    \"id\": 19,\n                    \"dateMov\": \"2023-05-01T01:16:50.139+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 200,\n                    \"balance\": 12023\n                },\n                {\n                    \"id\": 20,\n                    \"dateMov\": \"2023-05-01T01:30:06.878+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 12023,\n                    \"balance\": 0\n                },\n                {\n                    \"id\": 21,\n                    \"dateMov\": \"2023-05-01T01:30:39.560+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 12023,\n                    \"balance\": 12023\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 20,\n        \"dateMov\": \"2023-05-01T01:30:06.878+00:00\",\n        \"typeMove\": \"Retiro\",\n        \"value\": 12023,\n        \"balance\": 0,\n        \"account\": {\n            \"id\": 2,\n            \"nroAccount\": \"123\",\n            \"typeAccount\": \"Ahorro\",\n            \"initBalance\": 12323,\n            \"status\": true,\n            \"movementList\": [\n                {\n                    \"id\": 1,\n                    \"dateMov\": \"2022-04-12T05:00:00.000+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 100,\n                    \"balance\": 100\n                },\n                {\n                    \"id\": 13,\n                    \"dateMov\": \"2023-04-30T22:04:16.555+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 300,\n                    \"balance\": 0\n                },\n                {\n                    \"id\": 14,\n                    \"dateMov\": \"2023-04-30T22:38:03.485+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 300,\n                    \"balance\": 12123\n                },\n                {\n                    \"id\": 18,\n                    \"dateMov\": \"2023-05-01T01:12:45.459+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 200,\n                    \"balance\": 12423\n                },\n                {\n                    \"id\": 19,\n                    \"dateMov\": \"2023-05-01T01:16:50.139+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 200,\n                    \"balance\": 12023\n                },\n                {\n                    \"id\": 20,\n                    \"dateMov\": \"2023-05-01T01:30:06.878+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 12023,\n                    \"balance\": 0\n                },\n                {\n                    \"id\": 21,\n                    \"dateMov\": \"2023-05-01T01:30:39.560+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 12023,\n                    \"balance\": 12023\n                }\n            ]\n        }\n    },\n    {\n        \"id\": 21,\n        \"dateMov\": \"2023-05-01T01:30:39.560+00:00\",\n        \"typeMove\": \"Deposito\",\n        \"value\": 12023,\n        \"balance\": 12023,\n        \"account\": {\n            \"id\": 2,\n            \"nroAccount\": \"123\",\n            \"typeAccount\": \"Ahorro\",\n            \"initBalance\": 12323,\n            \"status\": true,\n            \"movementList\": [\n                {\n                    \"id\": 1,\n                    \"dateMov\": \"2022-04-12T05:00:00.000+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 100,\n                    \"balance\": 100\n                },\n                {\n                    \"id\": 13,\n                    \"dateMov\": \"2023-04-30T22:04:16.555+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 300,\n                    \"balance\": 0\n                },\n                {\n                    \"id\": 14,\n                    \"dateMov\": \"2023-04-30T22:38:03.485+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 300,\n                    \"balance\": 12123\n                },\n                {\n                    \"id\": 18,\n                    \"dateMov\": \"2023-05-01T01:12:45.459+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 200,\n                    \"balance\": 12423\n                },\n                {\n                    \"id\": 19,\n                    \"dateMov\": \"2023-05-01T01:16:50.139+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 200,\n                    \"balance\": 12023\n                },\n                {\n                    \"id\": 20,\n                    \"dateMov\": \"2023-05-01T01:30:06.878+00:00\",\n                    \"typeMove\": \"Retiro\",\n                    \"value\": 12023,\n                    \"balance\": 0\n                },\n                {\n                    \"id\": 21,\n                    \"dateMov\": \"2023-05-01T01:30:39.560+00:00\",\n                    \"typeMove\": \"Deposito\",\n                    \"value\": 12023,\n                    \"balance\": 12023\n                }\n            ]\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Report Movimiento por Cliente Json",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/reportes/?clientId=2&fechaIni=2023-04-30&fechaFin=2023-05-01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reportes",
+								""
+							],
+							"query": [
+								{
+									"key": "clientId",
+									"value": "2"
+								},
+								{
+									"key": "fechaIni",
+									"value": "2023-04-30"
+								},
+								{
+									"key": "fechaFin",
+									"value": "2023-05-01"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Report Movimiento por Cliente Json",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/reportes/?clientId=2&fechaIni=2023-04-30&fechaFin=2023-05-01",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"reportes",
+										""
+									],
+									"query": [
+										{
+											"key": "clientId",
+											"value": "2"
+										},
+										{
+											"key": "fechaIni",
+											"value": "2023-04-30"
+										},
+										{
+											"key": "fechaFin",
+											"value": "2023-05-01"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 02 May 2023 12:34:12 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"fecha\": \"2023-04-30T22:04:16.555+00:00\",\n        \"cliente\": \"pedro\",\n        \"nroCuenta\": \"123\",\n        \"tipo\": \"Ahorro\",\n        \"saldoInicial\": 12323,\n        \"estado\": true,\n        \"movimiento\": 300,\n        \"saldoDisponible\": 0\n    },\n    {\n        \"fecha\": \"2023-04-30T22:38:03.485+00:00\",\n        \"cliente\": \"pedro\",\n        \"nroCuenta\": \"123\",\n        \"tipo\": \"Ahorro\",\n        \"saldoInicial\": 12323,\n        \"estado\": true,\n        \"movimiento\": 300,\n        \"saldoDisponible\": 12123\n    },\n    {\n        \"fecha\": \"2023-05-01T01:12:45.459+00:00\",\n        \"cliente\": \"pedro\",\n        \"nroCuenta\": \"123\",\n        \"tipo\": \"Ahorro\",\n        \"saldoInicial\": 12323,\n        \"estado\": true,\n        \"movimiento\": 200,\n        \"saldoDisponible\": 12423\n    },\n    {\n        \"fecha\": \"2023-05-01T01:16:50.139+00:00\",\n        \"cliente\": \"pedro\",\n        \"nroCuenta\": \"123\",\n        \"tipo\": \"Ahorro\",\n        \"saldoInicial\": 12323,\n        \"estado\": true,\n        \"movimiento\": 200,\n        \"saldoDisponible\": 12023\n    },\n    {\n        \"fecha\": \"2023-05-01T01:30:06.878+00:00\",\n        \"cliente\": \"pedro\",\n        \"nroCuenta\": \"123\",\n        \"tipo\": \"Ahorro\",\n        \"saldoInicial\": 12323,\n        \"estado\": true,\n        \"movimiento\": 12023,\n        \"saldoDisponible\": 0\n    },\n    {\n        \"fecha\": \"2023-05-01T01:30:39.560+00:00\",\n        \"cliente\": \"pedro\",\n        \"nroCuenta\": \"123\",\n        \"tipo\": \"Ahorro\",\n        \"saldoInicial\": 12323,\n        \"estado\": true,\n        \"movimiento\": 12023,\n        \"saldoDisponible\": 12023\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Report Movimiento por Cliente  binario",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/reportes/pdf/?clientId=2&fechaIni=2023-04-30&fechaFin=2023-05-01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reportes",
+								"pdf",
+								""
+							],
+							"query": [
+								{
+									"key": "clientId",
+									"value": "2"
+								},
+								{
+									"key": "fechaIni",
+									"value": "2023-04-30"
+								},
+								{
+									"key": "fechaFin",
+									"value": "2023-05-01"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Report Movimiento por Cliente  binario",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/reportes/pdf/?clientId=2&fechaIni=2023-04-30&fechaFin=2023-05-01",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"reportes",
+										"pdf",
+										""
+									],
+									"query": [
+										{
+											"key": "clientId",
+											"value": "2"
+										},
+										{
+											"key": "fechaIni",
+											"value": "2023-04-30"
+										},
+										{
+											"key": "fechaFin",
+											"value": "2023-05-01"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Method"
+								},
+								{
+									"key": "Vary",
+									"value": "Access-Control-Request-Headers"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain;charset=UTF-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2216"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 02 May 2023 12:34:17 GMT"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=60"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "JVBERi0xLjQKJeLjz9MKMiAwIG9iago8PC9MZW5ndGggODI0L0ZpbHRlci9GbGF0ZURlY29kZT4+c3RyZWFtCnicjZbNbtswEITvegoe04NV/ov0rW2SogVaII1ewI1VREUSO7bTvn4lkUztLIfyIUCCGa529mO0eq4+tpWyzHHL2nUluay1Ywvhxr/eXwsmJGt/VRffNn/6x757Omz2bN2xbbfebd61v6tFPMFHP2cLZeT421Vb3VTP049kXwfhc8Vrw/5WztWKNcMB4+umYZqzXVfdRlFoV/MGypI3tdNYtk1tBZSVbGrlseyaWlgoa21rjzufYllvozgMgcZCcowF5RALyTEWlEMsJMdYSA6xtC7GAnKKheQYC8gpFpJjLCCnWECeYhkvS7GQHGNBOcRCcowF5RALyTEWkkOs4WKWYgE5xUJyjAXkFAvJMRaQUywgT7G0c6VYSI6xoBxiITnGgnKIheQYC8khliq+MpCcYiE5xgJyioXkGAvIKRaRb8ZVIoZNwJlgno/v+Uaz9vF4jVx3d/ercW8MC+LILQyfXvzE/z1smbc+K0ffxaeXYSFlyknup0VByrX99qReMs7Vs37aLKTe7ephfVowOmPBL0/9Xb96oBWV9NMyIhWv9odVKPnmgPPTeiIHXhfzcRvJHdvI1NPDBfM5QiRScsZal/1+u3nqfz7kPIZPno4+L9wH9fZpw9eDWnC9OC4WrDI8TnEqifAU0Sy5XgpbE4f1bnIYY/BdI70IqfBVIu4P95vdLjPYdANy5aWqOb4L5MRh95KZZGJL7D+6Q3/675Ksr7PkuecneKRg1h0G7OS5IG3DEUhrXAKp3JKrDEhtJ4d2GCTtpQSSumdAZssXQdITRZDUftltN/v+kEP5f5ollLmeRb7nMGbFz8YpHMTJAyzJl0IutaE4jdcBp/EYJ+mliJO453DmypdxkhNlnMQO/y/TLGUZZqZjXYBpGncuTGMtgmmMfoVplwMa6tDhrSIUhkl7KcGk7hmY2fJFmPREESa1Q5hplmWYuY55Caa0Z8MUGsLkMsFUfMkzG1P78F5xjcMwSS9FmMQ9BzNXvgyTnCjDJHYMM84Swkk4SUm8MzX51IIotYUfPzp+YgWUymdQqvjxYyFJ2kqJJHXPkMyWL5KkJ4okqb2wMtMw51jmuj4+8Q+JSfKICmVuZHN0cmVhbQplbmRvYmoKNCAwIG9iago8PC9UeXBlL1BhZ2UvTWVkaWFCb3hbMCAwIDU5NSA4NDJdL1Jlc291cmNlczw8L0ZvbnQ8PC9GMSAxIDAgUj4+Pj4vQ29udGVudHMgMiAwIFIvUGFyZW50IDMgMCBSPj4KZW5kb2JqCjEgMCBvYmoKPDwvVHlwZS9Gb250L1N1YnR5cGUvVHlwZTEvQmFzZUZvbnQvSGVsdmV0aWNhL0VuY29kaW5nL1dpbkFuc2lFbmNvZGluZz4+CmVuZG9iagozIDAgb2JqCjw8L1R5cGUvUGFnZXMvQ291bnQgMS9LaWRzWzQgMCBSXT4+CmVuZG9iago1IDAgb2JqCjw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAzIDAgUj4+CmVuZG9iago2IDAgb2JqCjw8L1Byb2R1Y2VyKGlUZXh0riA1LjUuMTMgqTIwMDAtMjAxOCBpVGV4dCBHcm91cCBOViBcKEFHUEwtdmVyc2lvblwpKS9DcmVhdGlvbkRhdGUoRDoyMDIzMDUwMjA3MzQxNy0wNScwMCcpL01vZERhdGUoRDoyMDIzMDUwMjA3MzQxNy0wNScwMCcpPj4KZW5kb2JqCnhyZWYKMCA3CjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMTAxOCAwMDAwMCBuIAowMDAwMDAwMDE1IDAwMDAwIG4gCjAwMDAwMDExMDYgMDAwMDAgbiAKMDAwMDAwMDkwNiAwMDAwMCBuIAowMDAwMDAxMTU3IDAwMDAwIG4gCjAwMDAwMDEyMDIgMDAwMDAgbiAKdHJhaWxlcgo8PC9TaXplIDcvUm9vdCA1IDAgUi9JbmZvIDYgMCBSL0lEIFs8YTk1NjBjY2NiMDZhYjg0ZTEyMzJlN2FhYjRjZjBlMDc+PGE5NTYwY2NjYjA2YWI4NGUxMjMyZTdhYWI0Y2YwZTA3Pl0+PgolaVRleHQtNS41LjEzCnN0YXJ0eHJlZgoxMzYwCiUlRU9GCg=="
+						}
+					]
+				}
+			]
+		}
+	]
+}
